@@ -76,4 +76,4 @@ function seekOverlaps() {
     return foundLargerThan2;
 }
 
-console.log(table.map(line => line.join(' ')), seekOverlaps())
+console.log(table.map(line => line.map(n => n == 0 ? '.' : n).join(' ')).join('\n'), seekOverlaps())
